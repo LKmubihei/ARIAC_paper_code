@@ -1,0 +1,7 @@
+(define (problem ariac_problem)
+    (:domain ariac_domain)
+    (:requirements :strips :typing)
+    (:objects agv1 - container agv2 - container agv3 - container agv4 - container battery_blue - part battery_green - part battery_orange - part battery_purple - part battery_red - part bin1 - container bin2 - container bin3 - container bin4 - container bin5 - container bin6 - container bin7 - container bin8 - container curr_position - container floor_robot - robot pump_blue - part pump_green - part pump_orange - part pump_purple - part pump_red - part regulator_blue - part regulator_green - part regulator_orange - part regulator_purple - part regulator_red - part sensor_blue - part sensor_green - part sensor_orange - part sensor_purple - part sensor_red - part)
+    (:init (is_enabled floor_robot) (is_reachable floor_robot curr_position) (on battery_red bin1) (on pump_red bin1) (on regulator_green bin2) (on sensor_green bin2))
+    (:goal (on battery_red agv1))
+)

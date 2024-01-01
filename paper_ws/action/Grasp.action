@@ -1,0 +1,10 @@
+# Define the goal
+string type 
+string dest
+geometry_msgs/Pose pose 
+int32 number         #0表示正常抓取，1进机床抓取，2正常放置，3进机床放置
+---
+# Define the result
+bool success
+---
+string node_status
